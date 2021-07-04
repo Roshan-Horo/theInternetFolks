@@ -58,7 +58,7 @@ const checkScopes = asyncHandler(async (req,res,next) => {
         
         // }
         if(path === "/school/students"){
-            check("school-students")
+            check("school-student")
         }else if(path.includes('/user/')){
             if(req.method === 'GET'){
             check("user-get")
